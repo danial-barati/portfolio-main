@@ -1,0 +1,456 @@
+@font-face {
+  font-family: quick;
+  src: url(../font/Quicksand-VariableFont_wght.ttf);
+}
+@keyframes moving {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(5px);
+  }
+  40% {
+    transform: translateX(-8px);
+  }
+  60% {
+    transform: translateX(0);
+  }
+  80% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.11);
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to bottom, #000000, #3e1420, #7a1835, #bb1345, #ff014f);
+  border-radius: 2px;
+  height: 75px;
+}
+
+.bgcolorbody {
+  background-color: #212529;
+  font-family: quick;
+}
+
+.scrollbh {
+  scroll-behavior: smooth;
+}
+
+.fontcolorh {
+  color: #b4bbc5;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.fontclname {
+  color: #b4bbc5;
+  font-size: 33px;
+}
+
+.font-icon {
+  color: #b4bbc5;
+  font-size: 35px;
+}
+
+.hoverli > li > a {
+  transition: 300ms;
+}
+.hoverli > li > a:hover {
+  color: whitesmoke;
+}
+
+.sec-color {
+  color: #b4bbc5;
+}
+
+.h-color {
+  color: #ff014f;
+  font-weight: 400;
+}
+
+.hcolor {
+  color: #b4bbc5;
+}
+
+#menulist {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 300ms;
+}
+
+.spancursor {
+  cursor: pointer;
+  transition: 300ms;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spancursor:hover {
+  color: white;
+}
+
+.navh1 {
+  height: 0;
+  overflow: hidden;
+}
+
+#scrollbar {
+  transition: 500ms;
+}
+
+.li-common {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(145deg, #1e2024, #23272b);
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  transition: 300ms;
+  border-radius: 5px;
+}
+@media screen and (max-width: 576px) {
+  .li-common {
+    width: 45px;
+    height: 45px;
+  }
+}
+.li-common:hover {
+  transform: translateY(-5px);
+}
+.li-common:hover > a > i {
+  color: whitesmoke;
+}
+.li-common > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.li-common > a > i {
+  color: #b4bbc5;
+  font-size: 20px;
+  transition: 300ms;
+}
+@media screen and (max-width: 567px) {
+  .li-common > a > i {
+    font-size: 17px;
+  }
+}
+.li-common > a > img {
+  width: 30px;
+  height: 30px;
+}
+@media screen and (max-width: 567px) {
+  .li-common > a > img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.bar {
+  height: 4px;
+  background-color: #1c1e22;
+  margin-top: 100px;
+}
+
+.portbox {
+  border-radius: 20px;
+  background: linear-gradient(to right bottom, rgba(33, 36, 40, 0.2235294118), #16181c);
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  padding-bottom: 0 !important;
+  transition: 300ms;
+}
+.portbox:hover > figure > img {
+  transform: scale(1.05);
+}
+.portbox > figure {
+  overflow: hidden;
+}
+.portbox > figure > img {
+  transition: 300ms;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.portbox > figure > figcaption div > h3 > a {
+  color: #b4bbc5;
+  transition: 300ms;
+}
+.portbox > figure > figcaption div > h3 > a:hover {
+  color: whitesmoke;
+}
+.portbox > figure > figcaption div > i {
+  color: #b4bbc5;
+  transition: 300ms;
+  animation: moving 3s infinite;
+}
+.portbox > figure > figcaption div > i:hover {
+  color: whitesmoke;
+}
+.portbox > figure > figcaption > span {
+  color: #ff014f;
+}
+
+.bglinear1 {
+  background: linear-gradient(180deg, rgba(89, 195, 120, 0.6), rgba(31, 30, 28, 0.6) 67.59%);
+  color: #59c378;
+  border-radius: 12px;
+  padding: 3px;
+}
+
+.bglinear1-1 {
+  background: #1f1e1d;
+  border-radius: 12px;
+}
+
+.bglinear2 {
+  background: linear-gradient(180deg, rgba(255, 230, 0, 0.6), rgba(31, 30, 28, 0.6) 67.59%);
+  color: #ffe600;
+  padding: 3px;
+  border-radius: 12px;
+}
+
+.bglinear3 {
+  background: linear-gradient(180deg, rgba(255, 154, 0, 0.6), rgba(31, 30, 28, 0.6) 67.59%);
+  color: #ff9a00;
+  padding: 3px;
+  border-radius: 12px;
+}
+
+.bglinear4 {
+  background: linear-gradient(180deg, rgba(0, 169, 255, 0.6), rgba(31, 30, 28, 0.6) 67.59%);
+  color: #00a9ff;
+  padding: 3px;
+  border-radius: 12px;
+}
+
+.bglinear5 {
+  background: linear-gradient(180deg, rgba(158, 0, 255, 0.6), rgba(31, 30, 28, 0.6) 67.59%);
+  color: #ad00ff;
+  padding: 3px;
+  border-radius: 12px;
+}
+
+.bglinear6 {
+  background: linear-gradient(180deg, rgba(221, 88, 79, 0.6), rgba(31, 30, 28, 0.6) 67.59%);
+  color: #dd584f;
+  padding: 3px;
+  border-radius: 12px;
+}
+
+.common-contact {
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  border-radius: 10px;
+  background-color: #212428;
+  color: #b4bbc5;
+}
+
+.me1 {
+  color: #ff014f;
+}
+
+.unset > input {
+  background-color: #191b1e;
+  outline: unset;
+  border-radius: 6px;
+  color: whitesmoke;
+  border: 2px solid #191b1e;
+  padding: 15px;
+  transition: 300ms;
+}
+.unset > input:focus {
+  border: 1px solid #ff014f;
+}
+.unset > input::-moz-placeholder {
+  color: #b4bbc5;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+.unset > input::placeholder {
+  color: #b4bbc5;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+@media screen and (max-width: 567px) {
+  .unset > input::-moz-placeholder {
+    font-size: 13px;
+  }
+  .unset > input::placeholder {
+    font-size: 13px;
+  }
+}
+.unset > input:last-of-type {
+  background: linear-gradient(145deg, #1e2024, #23272b);
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  outline: unset;
+  border: unset;
+  transition: 300ms;
+  font-size: 16px;
+}
+@media screen and (max-width: 567px) {
+  .unset > input:last-of-type {
+    font-size: 13px;
+  }
+}
+.unset > input:last-of-type:hover {
+  transform: translateY(5px);
+}
+.unset > textarea {
+  background-color: #191b1e;
+  border: #191b1e;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  outline: unset;
+  transition: 300ms;
+  color: whitesmoke;
+  text-transform: capitalize;
+  padding: 15px;
+}
+.unset > textarea:focus {
+  border: 1px solid #ff014f;
+}
+.unset > textarea::-moz-placeholder {
+  color: #b4bbc5;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+.unset > textarea::placeholder {
+  color: #b4bbc5;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+@media screen and (max-width: 567px) {
+  .unset > textarea::-moz-placeholder {
+    font-size: 13px;
+  }
+  .unset > textarea::placeholder {
+    font-size: 13px;
+  }
+}
+
+.foot {
+  color: #b4bbc5;
+  background: linear-gradient(145deg, #1e2024, #23272b);
+  background: linear-gradient(145deg, #1e2024, #23272b);
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  font-weight: light;
+  border-radius: 10px;
+}
+.foot > span {
+  text-transform: capitalize;
+}
+.foot > span > i {
+  margin-right: 7px;
+  margin-left: 5px;
+  color: #ff014f;
+}
+.foot > span > h2 {
+  text-transform: capitalize;
+  margin-left: 7px;
+  color: whitesmoke;
+}
+
+.arrow {
+  bottom: 3%;
+  right: 2%;
+  background: rgba(0, 0, 0, 0.2431372549);
+  width: 35px;
+  height: 35px;
+}
+.arrow > a {
+  transition: 300ms;
+  border-radius: 50%;
+}
+.arrow > a:hover > i {
+  color: #ff014f;
+}
+.arrow > a:hover {
+  box-shadow: 2px 2px 15px rgba(245, 245, 245, 0.196);
+}
+.arrow > a > i {
+  font-size: 24px;
+  transition: 300ms;
+  color: whitesmoke;
+}
+.arrow > a:hover {
+  color: #ff014f;
+}
+
+.fz1 {
+  font-size: 16px;
+}
+@media screen and (max-width: 567px) {
+  .fz1 {
+    font-size: 13px;
+  }
+}
+
+.fz2 {
+  font-size: 23px;
+}
+@media screen and (max-width: 567px) {
+  .fz2 {
+    font-size: 17px;
+  }
+}
+
+.fz3 {
+  font-size: 26px;
+}
+@media screen and (max-width: 567px) {
+  .fz3 {
+    font-size: 20px;
+  }
+}
+
+.fz4 {
+  font-size: 30px;
+}
+@media screen and (max-width: 567px) {
+  .fz4 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .arrowleft {
+    margin-top: 13px;
+  }
+}
+@media screen and (min-width: 567px) {
+  .arrowleft {
+    margin-top: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .arrowleft {
+    margin-top: 15px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .arrowleft {
+    margin-top: 16px;
+  }
+}
+
+.mbul {
+  margin-bottom: 70px;
+}
+
+.hid2 {
+  opacity: 0;
+  transform: scale(0);
+}/*# sourceMappingURL=master.css.map */
