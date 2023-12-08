@@ -2,7 +2,7 @@
 
 ** a responsive portfolio website with bootstrap **
 
-![view](https://github.com/danial-barati/portfolio-main/assets/104683176/b25ac8c3-4f0c-4129-a11f-4642c781c771)
+![view](https://github.com/danial-barati/portfolio-main/assets/104683176/3922bfb9-03c0-4762-b4c4-8dcab435fcde)
 
 - 🔗 [demo](https://danial-barati.github.io/portfolio-main/)
 
