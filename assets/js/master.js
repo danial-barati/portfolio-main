@@ -1,9 +1,11 @@
+let _scroll = document.getElementById("scrollbar");
+let _status = _scroll.getAttribute("data-status");
+let _menulist = document.getElementById("menulist");
+
 document
   .getElementsByClassName("spancursor")[0]
-  .addEventListener("click", () => {
-    let _scroll = document.getElementById("scrollbar");
-    let _status = _scroll.getAttribute("data-status");
-    let _menulist = document.getElementById("menulist");
+  .addEventListener("click", (e) => {
+    e.stopImmediatePropagation()
     if (_status == "off") {
       _scroll.style.height = _scroll.scrollHeight + "px";
       _menulist.style.transform = "rotate(90deg)";
@@ -57,4 +59,10 @@ sec.forEach((val, i) => {
   val.setAttribute("data-offset", val.offsetTop);
   val.classList.add("hid2");
   val.style.transition = "700ms";
+});
+
+window.addEventListener("click", () => {
+  _scroll.style.height = "0";
+  _menulist.style.transform = "rotate(0deg)";
+  _scroll.setAttribute("data-status", "off");
 });
